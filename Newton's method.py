@@ -45,3 +45,27 @@ def Newton4(x,g,accuracy = 0.001):
         g = g - (((g**4)-x)/(4*g**3))
 
     return g
+
+
+def AnyNewton(r,x,g,accuracy=0.001):
+    """this code will allow you to get the root of any power that you choose
+
+       r = the power of the root
+
+       x = the value that's root we are loking for
+
+       g = a guess of what the value actually is
+    """
+
+    #^anything except 1
+    R = r - 1
+
+    while abs(((g**r)-x)) > accuracy:
+        g = g - (((g**r)-x)/(r*g**R))
+    return g
+
+      
+
+
+
+               
