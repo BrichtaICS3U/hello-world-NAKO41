@@ -17,3 +17,6 @@ def Newton(x,g,accuracy = 0.001):
     return g
 
                  
+#i personally think that Newton's method would be a more efficient method
+#mainly because it is able to find cube roots and not just square roots like
+#heron's method.
