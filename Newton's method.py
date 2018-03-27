@@ -33,3 +33,15 @@ def Newton3(x,g,accuracy = 0.001):
         g = g - (((g**3)-x)/(3*g**2))
 
     return g
+
+
+def Newton4(x,g,accuracy = 0.001):
+    """the goal is thesame as the above function but for power of 4 roots
+    """
+
+
+    #^4
+    while abs(((g**4)-x)) > accuracy:
+        g = g - (((g**4)-x)/(4*g**3))
+
+    return g
